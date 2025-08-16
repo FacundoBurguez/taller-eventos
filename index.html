@@ -3,9 +3,21 @@
 <head>
   <meta charset="utf-8" />
   <title>Taller de Eventos</title>
+  <style>
+    #box { padding: 5px; background: #2ecc71; display: inline-block; margin-top: 16px; }
+  </style>
 </head>
 <body>
   <h1>Taller de Eventos</h1>
-  <button type="button" onclick="alert('Hola!')">Saludar</button>
+
+  <!-- Requisito inicial: onclick -->
+  <button id="saludarBtn" type="button" onclick="alert('Hola!')">Saludar</button>
+
+  <div id="box" role="button" tabindex="0" aria-label="Contenedor clickeable">
+    Soy el div (haz click aquí)
+  </div>
+
+  <script src="events.js"></script>
 </body>
 </html>
+
